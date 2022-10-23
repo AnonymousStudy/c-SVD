@@ -22,7 +22,7 @@ L = double(permute(orig,[3 1 2])) /255.;
 maxP = max(abs(L(:)));
 [n1,n2,n3] = size(L);
 X = L;
-rhos = 0.3
+rhos = 0.3;
 ind = find(rand(n1*n2*n3,1)<rhos);
 X(ind) = rand(length(ind),1);
 lambda = 1/sqrt(max(n1,n2));
@@ -33,7 +33,6 @@ DEBUG = 1;
 max_mu = 1e10;
 mu=4e-4; 
 rho = 1.3;
-lamdaratio =1.0
 
 Lnn = zeros(size(X));
 Y = zeros(size(X));
