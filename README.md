@@ -6,7 +6,7 @@ we propose a new tensor decomposition framework named core-SVD. The main idea of
 
 <p align="center">
 	<a href="https://github.com/AnonymousStudy/c-SVD">
-    <img class="page-image" src="figure/csvd.jpg" >
+    <img class="page-image" src="figure/csvd.png" >
 	</a>
 </p>
 
