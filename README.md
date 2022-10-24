@@ -37,17 +37,30 @@ methods    | matrix RPCA (SVD) |TTNN       (Tensor Train) | SNN   (Tucker)| RTD 
 [Paints](https://www1.cs.columbia.edu/CAVE/databases/multispectral/images/paints.png) | 27.14 | 30.96 | 31.80 | 27.32 | 33.69  | **38.21**   
 [Sushi](https://www1.cs.columbia.edu/CAVE/databases/multispectral/images/sushi.png)  | 29.54 | 32.92 | 31.80 | 30.25 | 33.45   | **37.56**  
 
-2. run the simultation on phase Transition in rank and sparsity using:
+2. run the simultation on phase transition in rank and sparsity using:
 ```
 matlab -nosplash -nodesktop < demo_simulation.m
 ```
 Below are some simulation results, relative recovery errors is reported:
 
-* adding salt-and-pepper noise, where sparsity ratio p of randomly chosen pixels are replaced with either 1 or -1 (each with 50% probability).
-![](figure/simulation.jpg)
+    * under salt-and-pepper noise, where sparsity ratio p of randomly chosen pixels are replaced with either 1 or -1 (each with 50% probability).
+    ![](figure/simulation.jpg)
 
-* adding uniform distribution noise, where sparsity ratio p of randomly chosen pixels are drawn uniformly from the interval [-1, 1].
-![](figure/simulation_uniformnoise.jpg)
+    * under uniform distribution noise, where sparsity ratio p of randomly chosen pixels are drawn uniformly from the interval [-1, 1].
+    ![](figure/simulation_uniformnoise.jpg)
+
+    * under guassian distribution noise, where sparsity ratio p of randomly chosen pixels are drawn from a zero-mean Gaussian distribution with standard deviation 10.
+    ![](figure/simulation_uniformnoise.jpg)
+
+3. run the phase transition of real hyperspectral image data using:
+```
+matlab -nosplash -nodesktop < demo_HSI_phase_transition.m
+
+```
+The PSNR results of c-SVD and t-SVD under varying sparse noise levels are presented below:
+
+
+
 
 
 ### References
