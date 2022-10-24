@@ -55,9 +55,8 @@ Below are some simulation results, relative recovery errors is reported:
 3. run the phase transition of real hyperspectral image data using:
 ```
 matlab -nosplash -nodesktop < demo_HSI_phase_transition.m
-
 ```
-The PSNR results of c-SVD and t-SVD under varying sparse noise levels are presented below:
+* The PSNR results of c-SVD and t-SVD under varying sparse noise levels are presented below:
 
 
 
