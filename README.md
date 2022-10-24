@@ -12,6 +12,9 @@ we propose a new tensor decomposition framework named core-SVD. The main idea of
 
 ## Contents
 - [Demo](#Demo)
+ - [hyperspectral image denoising](#hyperspectral-image-denoising)
+ - [phase transition simulation](#phase-transition-simulation)
+ - [phase transition of real data](#phase-transition-real-data)
 - [References](#references)
 
 
@@ -20,6 +23,7 @@ we propose a new tensor decomposition framework named core-SVD. The main idea of
 ### prerequisites
 * MATLAB R2021b
 
+### hyperspectral-image-denoising
 1. run the hyperspectral image denoising demo using:
 ```
 matlab -nosplash -nodesktop < demo_hyperspectral_image_denoising.m
@@ -37,21 +41,24 @@ methods    | matrix RPCA (SVD) |TTNN       (Tensor Train) | SNN   (Tucker)| RTD 
 [Paints](https://www1.cs.columbia.edu/CAVE/databases/multispectral/images/paints.png) | 27.14 | 30.96 | 31.80 | 27.32 | 33.69  | **38.21**   
 [Sushi](https://www1.cs.columbia.edu/CAVE/databases/multispectral/images/sushi.png)  | 29.54 | 32.92 | 31.80 | 30.25 | 33.45   | **37.56**  
 
+### phase-transition-simulation
 2. run the simultation on phase transition in rank and sparsity using:
 ```
 matlab -nosplash -nodesktop < demo_simulation.m
 ```
 Below are some simulation results, relative recovery errors is reported:
 
-* under salt-and-pepper noise, where sparsity ratio p of randomly chosen pixels are replaced with either 1 or -1 (each with 50% probability).
+* under **salt-and-pepper noise**, where sparsity ratio p of randomly chosen pixels are replaced with either 1 or -1 (each with 50% probability).
 ![](figure/simulation_saltnoise.png)
 
-* under uniform distribution noise, where sparsity ratio p of randomly chosen pixels are drawn uniformly from the interval [-1, 1].
+* under **uniform distribution noise**, where sparsity ratio p of randomly chosen pixels are drawn uniformly from the interval [-1, 1].
 ![](figure/simulation_uniformnoise.png)
 
-* under guassian distribution noise, where sparsity ratio p of randomly chosen pixels are drawn from a zero-mean Gaussian distribution with standard deviation 10.
+* under **guassian distribution noise**, where sparsity ratio p of randomly chosen pixels are drawn from a zero-mean Gaussian distribution with standard deviation 10.
 ![](figure/simulation_gaussiannoise.png)
 
+
+### phase-transition-real-data
 3. run the phase transition of real hyperspectral image data using:
 ```
 matlab -nosplash -nodesktop < demo_HSI_phase_transition.m
