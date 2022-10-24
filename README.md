@@ -47,7 +47,7 @@ Below are some simulation results, relative recovery errors is reported:
 ![](figure/simulation.jpg)
 
 * adding uniform distribution noise, where sparsity ratio p of randomly chosen pixels are drawn uniformly from the interval [-1, 1].
-
+![](figure/simulation_uniformnoise.jpg)
 
 
 ### References
