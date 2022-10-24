@@ -28,7 +28,7 @@ matlab -nosplash -nodesktop < demo_hyperspectral_image_denoising.m
 Below are some hyperspectral image denoising results, PSNR is reported:
 
 
-methods    | matrix RPCA (SVD) |TTNN (Tensor Train) | SNN (Tucker)| RTD (CP)       | TNN (t-SVD) | CNN   (c-SVD) 
+methods    | matrix RPCA (SVD) |TTNN       (Tensor Train) | SNN   (Tucker)| RTD (CP)       | TNN   (t-SVD) | CNN     (c-SVD) 
 ---------|--------|--------|-----|--------|-----|-----
 [Toys](https://www1.cs.columbia.edu/CAVE/databases/multispectral/images/chart_and_stuffed_toy.png)     | 27.68 |30.45 | 28.56 | 25.13| 34.10   | **39.59**   
 [Feathers](https://www1.cs.columbia.edu/CAVE/databases/multispectral/images/feathers.png)     | 25.02 |29.21 | 29.04 | 24.26 | 30.23   | **35.63**  
