@@ -44,13 +44,13 @@ matlab -nosplash -nodesktop < demo_simulation.m
 Below are some simulation results, relative recovery errors is reported:
 
 * under salt-and-pepper noise, where sparsity ratio p of randomly chosen pixels are replaced with either 1 or -1 (each with 50% probability).
-![](figure/simulation.jpg)
+![](figure/simulation_saltnoise.png)
 
 * under uniform distribution noise, where sparsity ratio p of randomly chosen pixels are drawn uniformly from the interval [-1, 1].
-![](figure/simulation_uniformnoise.jpg)
+![](figure/simulation_uniformnoise.png)
 
 * under guassian distribution noise, where sparsity ratio p of randomly chosen pixels are drawn from a zero-mean Gaussian distribution with standard deviation 10.
-![](figure/simulation_uniformnoise.jpg)
+![](figure/simulation_gaussiannoise.png)
 
 3. run the phase transition of real hyperspectral image data using:
 ```
