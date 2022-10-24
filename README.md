@@ -57,7 +57,7 @@ Below are some simulation results, relative recovery errors is reported:
 matlab -nosplash -nodesktop < demo_HSI_phase_transition.m
 ```
 * The PSNR results of c-SVD and t-SVD under varying sparse noise levels are presented below:
-
+![](figure/csvd_HSI.jpg)
 
 
 
