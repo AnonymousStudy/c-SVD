@@ -13,7 +13,7 @@ we propose a new tensor decomposition framework named core-SVD. The main idea of
 ## Contents
 - [Demo](#Demo)
  - [hyperspectral image denoising](#hyperspectral-image-denoising)
- - [phase transition simulation](#phase-transition-simulation)
+ - [phase transition simulation under different noise](#phase-transition-simulation-under-different-noise)
  - [phase transition of real data](#phase-transition-real-data)
 - [References](#references)
 
@@ -41,7 +41,7 @@ methods    | matrix RPCA (SVD) |TTNN       (Tensor Train) | SNN   (Tucker)| RTD 
 [Paints](https://www1.cs.columbia.edu/CAVE/databases/multispectral/images/paints.png) | 27.14 | 30.96 | 31.80 | 27.32 | 33.69  | **38.21**   
 [Sushi](https://www1.cs.columbia.edu/CAVE/databases/multispectral/images/sushi.png)  | 29.54 | 32.92 | 31.80 | 30.25 | 33.45   | **37.56**  
 
-### phase-transition-simulation
+### phase-transition-simulation-under-different-noise
 2. run the simultation on phase transition in rank and sparsity using:
 ```
 matlab -nosplash -nodesktop < demo_simulation.m
@@ -54,7 +54,7 @@ Below are some simulation results, relative recovery errors is reported:
 * under **uniform distribution noise**, where sparsity ratio p of randomly chosen pixels are drawn uniformly from the interval [-1, 1].
 ![](figure/simulation_uniformnoise.png)
 
-* under **guassian distribution noise**, where sparsity ratio p of randomly chosen pixels are drawn from a zero-mean Gaussian distribution with standard deviation 10.
+* under **gaussian distribution noise**, where sparsity ratio p of randomly chosen pixels are drawn from a zero-mean Gaussian distribution with standard deviation 10.
 ![](figure/simulation_gaussiannoise.png)
 
 
